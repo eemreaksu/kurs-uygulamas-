@@ -1,0 +1,199 @@
+/* ===== RESET & GENEL ===== */
+body {
+    background: linear-gradient(135deg, #f4f6f9, #e9ecf1);
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* =========================
+   DARK MODE
+   body.dark-mode
+========================= */
+
+body.dark-mode {
+    background: linear-gradient(135deg, #0f172a, #020617);
+    color: #e5e7eb;
+}
+
+/* Başlık */
+body.dark-mode h1 {
+    color: #f1f5f9;
+}
+
+/* FORM */
+body.dark-mode #new-course {
+    background-color: #020617;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode label {
+    color: #cbd5f5;
+}
+
+body.dark-mode .form-control {
+    background-color: #020617;
+    border-color: #1e293b;
+    color: #e5e7eb;
+}
+body.dark-mode .form-group label {
+    color: #ffffff;
+}   
+body.dark-mode .form-control::placeholder {
+    color: #e6e9ee;
+}
+
+body.dark-mode .form-control:focus {
+    background-color: #020617;
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 0.2rem rgba(56, 189, 248, 0.25);
+}
+
+/* BUTON */
+body.dark-mode .btn-primary {
+    background-color: #38bdf8;
+    border-color: #38bdf8;
+    color: #020617;
+}
+
+body.dark-mode .btn-primary:hover {
+    background-color: #0ea5e9;
+}
+
+/* TABLO */
+body.dark-mode .table {
+    background-color: #020617;
+    color: #e5e7eb;
+}
+
+body.dark-mode .table thead {
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: #020617;
+}
+
+body.dark-mode .table tbody tr:hover {
+    background-color: #020617;
+}
+
+/* HR */
+body.dark-mode hr {
+    border-color: #1e293b;
+}
+
+
+/* Başlık */
+h1 {
+    font-weight: 700;
+    color: #2c3e50;
+    letter-spacing: 0.5px;
+}
+
+/* ===== FORM KART ===== */
+#new-course {
+    background: #fff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+#new-course:hover {
+    transform: translateY(-2px);
+}
+
+/* Label */
+#new-course label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #444;
+}
+
+/* Input */
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    transition: all 0.25s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.15);
+}
+
+/* Save Butonu */
+#new-course .btn-primary {
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    transition: all 0.3s ease;
+}
+
+#new-course .btn-primary:hover {
+    background-color: #0069d9;
+    transform: translateY(-1px);
+}
+
+/* ===== TABLO ===== */
+.table {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Table Head */
+.table thead {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: #fff;
+}
+
+.table thead th {
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+/* Table Body */
+.table tbody td {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+/* Satır hover */
+.table tbody tr {
+    transition: background-color 0.25s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #f2f6ff;
+}
+
+/* Görsel */
+.table img {
+    width: 75px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* İşlem Butonları */
+.table .btn {
+    padding: 4px 10px;
+    font-size: 13px;
+    border-radius: 8px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .col-md-5,
+    .col-md-7 {
+        margin-bottom: 25px;
+    }
+
+    .table img {
+        width: 60px;
+    }
+}
